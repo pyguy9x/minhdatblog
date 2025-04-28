@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Hành trình học lập trình của mình",
+    "url": "hanh-trinh-hoc-lap-trinh.html",
+    "date": "28/04/2025",
+    "description": "Chia sẻ những khó khăn, động lực và trải nghiệm đầu tiên khi học lập trình từ số 0."
+  },
+  {
+    "title": "Tại sao nên học HTML/CSS trước?",
+    "url": "tai-sao-hoc-html-css.html",
+    "date": "29/04/2025",
+    "description": "Trình tự hợp lý khi bắt đầu học lập trình web - tránh nản, tiết kiệm thời gian học tập."
+  },
+  {
+    "title": "5 Mẹo tự học hiệu quả",
+    "url": "meo-tu-hoc-hieu-qua.html",
+    "date": "30/04/2025",
+    "description": "Chia sẻ 5 tips đơn giản nhưng cực kỳ hiệu quả giúp bạn tự học mọi kỹ năng nhanh hơn."
+  }
+]
