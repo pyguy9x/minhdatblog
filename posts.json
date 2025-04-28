@@ -6,10 +6,10 @@
     "description": "Chia sẻ những khó khăn, động lực và trải nghiệm đầu tiên khi học lập trình từ số 0."
   },
   {
-    "title": "Tại sao nên học HTML/CSS trước?",
-    "url": "tai-sao-hoc-html-css.html",
+    "title": "Welcome",
+    "url": "./posts/Welcome.html",
     "date": "29/04/2025",
-    "description": "Trình tự hợp lý khi bắt đầu học lập trình web - tránh nản, tiết kiệm thời gian học tập."
+    "description": "Ví dụ về web tĩnh"
   },
   {
     "title": "5 Mẹo tự học hiệu quả",
