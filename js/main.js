@@ -18,6 +18,10 @@ fetch('posts.json')
 
 // Dark mode toggle
 const toggle = document.getElementById('toggle-theme');
-toggle.addEventListener('click', () => {
-  document.body.classList.toggle('dark');
-});
+  toggle.addEventListener('click', () => {
+    if (document.documentElement.getAttribute('data-theme') === 'dark') {
+      document.documentElement.removeAttribute('data-theme');
+    } else {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  });
