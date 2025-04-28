@@ -1,66 +1,90 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  background: var(--bg);
-  color: var(--text);
-  scroll-behavior: smooth;
-}
-
-:root {
-  --bg: #ffffff;
-  --text: #333333;
-  --accent: #ff914d;
-}
-
-body.dark {
-  --bg: #1e1e1e;
-  --text: #f0f0f0;
-  --accent: #ffa94d;
-}
-
-header {
-  background: var(--accent);
-  color: #fff;
-  padding: 1rem;
-  text-align: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-header button {
-  background: transparent;
-  border: none;
-  color: #fff;
-  font-size: 1.2rem;
-  cursor: pointer;
-  position: absolute;
-  right: 1rem;
-  top: 1.2rem;
-}
-
-.post-list {
-  padding: 2rem;
-  max-width: 800px;
-  margin: auto;
-}
-
-.post-card {
-  border-bottom: 1px solid var(--accent);
-  padding: 1rem 0;
-}
-
-.post-card h2 a {
-  text-decoration: none;
-  color: var(--accent);
-}
-
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: var(--accent);
-  color: #fff;
-  margin-top: 2rem;
-}
+    :root {
+      --bg-color: #f0f2f5;
+      --text-color: #333;
+      --link-color: #0077cc;
+      --card-bg: white;
+    }
+    [data-theme="dark"] {
+      --bg-color: #121212;
+      --text-color: #e0e0e0;
+      --link-color: #90caf9;
+      --card-bg: #1f1f1f;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background: var(--bg-color);
+      color: var(--text-color);
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: #ff6600;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav button {
+      background: white;
+      color: #ff6600;
+      border: none;
+      padding: 8px 16px;
+      font-size: 14px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    nav button:hover {
+      background: #ffe0cc;
+    }
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      flex: 1;
+    }
+    .post-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    .post-card {
+      background: var(--card-bg);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: background 0.3s, box-shadow 0.3s;
+    }
+    .post-card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .post-card h2 {
+      margin-top: 0;
+    }
+    .post-card p {
+      margin-bottom: 0;
+    }
+    .post-card a {
+      text-decoration: none;
+      color: var(--link-color);
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      margin: 20px 0;
+      color: #777;
+    }
